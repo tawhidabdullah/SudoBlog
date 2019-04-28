@@ -43,31 +43,10 @@ class App extends Component {
                 </span>
               </a>
             </div>
+
             <div class="link-group">
               <a href="javascript:void(0)">
-                <div class="User-area">
-                  <div class="User-avtar">
-                    <img src="http://f1s.000webhostapp.com/images/avatar/avatar5.png" />
-                  </div>
-                  <ul class="User-Dropdown U-open">
-                    <li>
-                      <a href="#">My Profile</a>
-                    </li>
-                    <li>
-                      <a href="#">Notifications</a>
-                      <span>40</span>
-                    </li>
-                    <li>
-                      <a href="#">Projects</a>
-                    </li>
-                    <li>
-                      <a href="#">Settings</a>
-                    </li>
-                    <li>
-                      <a href="#">Logout</a>
-                    </li>
-                  </ul>
-                </div>
+                <img src="http://f1s.000webhostapp.com/images/avatar/avatar5.png" />
               </a>
             </div>
           </div>
@@ -102,7 +81,7 @@ class App extends Component {
                 <img
                   class="post-card__img"
                   id="post-card__img"
-                  src="http://jazztravels.com/wp-content/uploads/2015/07/313.jpg"
+                  src="https://images.pexels.com/photos/1772120/pexels-photo-1772120.jpeg?cs=srgb&dl=blackboard-close-up-computer-keyboard-1772120.jpg&fm=jpg"
                   alt="post-img"
                 />
               </div>
@@ -134,7 +113,7 @@ class App extends Component {
                 <img
                   class="post-card__img"
                   id="post-card__img"
-                  src="http://jazztravels.com/wp-content/uploads/2015/07/313.jpg"
+                  src="https://images.pexels.com/photos/1772120/pexels-photo-1772120.jpeg?cs=srgb&dl=blackboard-close-up-computer-keyboard-1772120.jpg&fm=jpg"
                   alt="post-img"
                 />
               </div>
@@ -166,7 +145,39 @@ class App extends Component {
                 <img
                   class="post-card__img"
                   id="post-card__img"
-                  src="http://jazztravels.com/wp-content/uploads/2015/07/313.jpg"
+                  src="https://images.pexels.com/photos/450035/pexels-photo-450035.jpeg?cs=srgb&dl=connection-contemporary-data-450035.jpg&fm=jpg"
+                  alt="post-img"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="post-container">
+            <div class="post-card">
+              <div class="post-card__content">
+                <div class="post-card__info">
+                  <h1>My most favorite place in the world</h1>
+
+                  <div className="post-description">
+                    <p className="post-description">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Quas doloribus dolorum ratione optio. Tenetur id fugiat
+                      totam, ducimus velit? Officia mollitia reiciendis ipsum!
+                    </p>
+                  </div>
+
+                  <a href="#">Tawhid Abdullah</a>
+
+                  <div className="post-date-read-time">
+                    {" "}
+                    <p>April 28 &rarr; 3 min read</p>
+                  </div>
+                </div>
+              </div>
+              <div class="post-img-container">
+                <img
+                  class="post-card__img"
+                  id="post-card__img"
+                  src="https://images.pexels.com/photos/461496/pexels-photo-461496.jpeg?cs=srgb&dl=coffee-commerce-connection-461496.jpg&fm=jpg"
                   alt="post-img"
                 />
               </div>
