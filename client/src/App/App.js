@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 
 import "./App.css";
+import DraftDemo from "../components/Draftjs-demo";
+import { BrowserRouter, Route } from "react-router-dom";
 
 class App extends Component {
   state = {
@@ -71,6 +73,7 @@ class App extends Component {
                 </ul>
               </a>
             </div>
+
             <div className="link-group user-group">
               <a href="javascript:void(0)">
                 <div class="User-area" onClick={this.toggleUserDropDown}>
@@ -450,6 +453,7 @@ class App extends Component {
             <p>Sudoblog © 2019</p>
           </div>
         </div>
+        <DraftDemo />
       </React.Fragment>
     );
   }
