@@ -1,7 +1,6 @@
 {
-  "name": "react-mini-blog",
+  "name": "sudoBlog",
   "version": "0.1.0",
-  "homepage": "https://zonayedpca.github.io/react-mini-blog",
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
