@@ -1,0 +1,14 @@
+.feed-content {
+  margin-top: 13px;
+  position: absolute;
+  top: 42px;
+  bottom: 0;
+  left: 100px;
+  right: 0;
+  padding: 12px 7px;
+  background: white;
+}
+
+.feed-content {
+  right: 300px;
+}

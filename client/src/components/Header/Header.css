@@ -1,0 +1,296 @@
+.topbar {
+  border-bottom: 1px solid whitesmoke;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  padding: 6px 26px;
+  height: 49px;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menuNavContent {
+  margin: 0 auto;
+}
+.topbar a {
+  padding: 9px 28px;
+  color: rgba(0, 0, 0, 0.54) !important;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.topbar a:hover {
+  color: #333;
+}
+
+.topbar .right-group {
+  float: right;
+  margin-right: 120px;
+  display: flex;
+  justify-content: center;
+}
+
+.topbar .right-group .link-group {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+}
+
+.topbar .right-group .link-group .notification-icon svg {
+  margin-top: 27px;
+}
+
+.topbar
+  .right-group
+  .link-group
+  .notification-icon
+  svg.active-notification-icon {
+  fill: #1273b8;
+}
+
+topbar .right-group .link-group .notification-icon .svgIcon--25px {
+  line-height: 27px;
+  height: 27px;
+}
+
+.topbar .right-group .link-group a {
+  color: rgba(0, 0, 0, 0.54) !important;
+  font-size: 12px;
+}
+.topbar .right-group .link-group a img {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  object-fit: cover;
+  /* margin-right: 9px; */
+}
+.topbar .right-group .link-group a:hover {
+  text-decoration: none;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////// */
+/*            THE DROPDOWNS                                */
+
+.User-area {
+  width: 32px;
+  height: 32px;
+  position: relative;
+  cursor: pointer;
+  /* margin-left: 300px; */
+  z-index: 5353;
+}
+.User-area > .User-avtar {
+  width: 100%;
+  height: 100%;
+}
+.User-area > .User-avtar > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+.User-Dropdown {
+  display: none;
+  position: absolute;
+  border-radius: 7px;
+  background: #fff;
+  box-shadow: 3px 3px 8px rgba(214, 214, 214, 0.78);
+  list-style: none;
+  padding: 0 20px;
+  width: 230px;
+  margin: 0;
+  top: 56px;
+  right: -103px;
+}
+.User-Dropdown:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin-left: -0.5em;
+  right: 80px;
+  box-sizing: border-box;
+  border: 11px solid black;
+  border-color: transparent transparent #ffffff #ffffff;
+  transform-origin: 0 0;
+  transform: rotate(135deg);
+  box-shadow: -3px 3px 3px -3px rgba(214, 214, 214, 0.78);
+}
+.User-Dropdown.U-open {
+  display: block;
+}
+.User-Dropdown > li {
+  padding: 0px;
+  line-height: 47px;
+  border-bottom: 1px solid rgba(215, 215, 215, 0.16);
+}
+.User-Dropdown > li:last-child {
+  border-bottom: 0px;
+}
+.User-Dropdown > li > a {
+  font-size: 13px;
+  padding: 15px 25px 16px 10px;
+  text-decoration: none;
+  color: #1787e0;
+  transition: all 0.2s ease-out;
+}
+.User-Dropdown span {
+  background: #16d67a;
+  padding: 3px 10px;
+  color: #fff;
+  border-radius: 30px;
+  font-size: 13px;
+}
+
+/*
+
+Notificaion drop down 
+*/
+
+.Notification-Dropdown {
+  display: none;
+  position: absolute;
+  border-radius: 7px;
+  background: #fff;
+  box-shadow: 3px 3px 8px rgba(214, 214, 214, 0.78);
+  list-style: none;
+  padding: 0 20px;
+  width: 300px;
+  margin: 0;
+  top: 80px;
+  right: -118px;
+}
+.Notification-Dropdown:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin-left: -0.5em;
+  right: 120px;
+  box-sizing: border-box;
+  border: 11px solid black;
+  border-color: transparent transparent #ffffff #ffffff;
+  transform-origin: 0 0;
+  transform: rotate(135deg);
+  box-shadow: -3px 3px 3px -3px rgba(214, 214, 214, 0.78);
+}
+.Notification-Dropdown.U-open {
+  display: block;
+}
+.Notification-Dropdown > li {
+  padding: 0px;
+  line-height: 47px;
+  border-bottom: 1px solid rgba(215, 215, 215, 0.16);
+}
+.Notification-Dropdown > li:last-child {
+  border-bottom: 0px;
+}
+.Notification-Dropdown > li > a {
+  font-size: 13px;
+  padding: 15px 25px 16px 10px;
+  text-decoration: none;
+  color: #1787e0;
+  transition: all 0.2s ease-out;
+}
+.Notification-Dropdown span {
+  background: #16d67a;
+  padding: 3px 10px;
+  color: #fff;
+  border-radius: 30px;
+  font-size: 13px;
+}
+
+@media all and (max-width: 650px) {
+  .right-group {
+    float: right;
+    margin-left: auto;
+    padding: 0;
+  }
+
+  .menuNavContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  /* .topbar a {
+    padding: 9px 28px;
+  } */
+
+  .topbar {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+}
+
+@media all and (max-width: 700px) {
+  ul .Notification-Dropdown {
+    display: block;
+  }
+
+  .topbar .right-group {
+    float: right;
+    margin-right: 0px;
+  }
+}
+
+@media all and (max-width: 476px) {
+  .menuNavContent {
+    margin: 0 0;
+  }
+
+  .topbar a {
+    font-size: 12px;
+  }
+
+  .topbar .right-group .link-group a img {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+  }
+
+  .topbar .right-group .link-group .notification-icon svg {
+    margin-bottom: -8px;
+  }
+  .topbar .right-group .link-group .notification-icon .svgIcon--25px {
+    line-height: 21px;
+    height: 21px;
+    margin-right: -3px;
+  }
+}
+
+@media all and (max-width: 418px) {
+  .menuNavContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .menuNavContent a {
+    padding: 9px 0px;
+  }
+}
+
+@media all and (max-width: 370px) {
+  .topbar {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  .menuNavContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .menuNavContent a {
+    padding: 9px 0px;
+  }
+}

@@ -1,0 +1,38 @@
+@media all and (max-width: 650px) {
+  .feed-content {
+    margin-top: 113px;
+  }
+}
+
+@media all and (max-width: 700px) {
+  .feed-content {
+    right: 0;
+  }
+
+  .thirdcol-content {
+    display: none;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .thirdcol-content {
+    right: 0;
+  }
+  .feed-content {
+    left: 0;
+  }
+
+  .left-content {
+    display: none;
+  }
+}
+
+@media all and (min-width: 1260px) {
+  .feed-content {
+    left: 150px;
+  }
+
+  .thirdcol-content {
+    right: 0;
+  }
+}
