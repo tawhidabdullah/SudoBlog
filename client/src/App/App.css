@@ -141,7 +141,7 @@ img {
   position: relative;
   width: calc(100% - 50px);
   height: auto;
-  padding: 25px;
+  /* padding: 25px; */
 }
 
 .post-card__info h1 {
@@ -334,11 +334,11 @@ topbar .right-group .link-group .notification-icon .svgIcon--25px {
 }
 
 .thirdcol-content::-webkit-scrollbar {
-  opacity: 0; 
+  opacity: 0;
 }
 
 .thirdcol-content:hover .thirdcol-content::-webkit-scrollbar {
-  opacity: 1; 
+  opacity: 1;
 }
 
 .thirdcol-content > div > a,
