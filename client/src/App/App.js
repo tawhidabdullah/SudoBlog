@@ -39,14 +39,18 @@ class App extends Component {
           </div>
 
           <div class="right-group">
-            <div className="link-group ">
+            <div className="link-group notiGroup ">
               <a href="javascript:void(0)" className="notification-icon">
                 <span
                   class="svgIcon svgIcon--bell svgIcon--25px"
                   onClick={this.toggleNotificationDropDown}
                 >
                   <svg
-                    class="svgIcon-use"
+                    class={
+                      this.state.isInNotiFicationClicked
+                        ? "svgIcon-use active-notification-icon"
+                        : "svgIcon-use"
+                    }
                     width="25"
                     height="25"
                     viewBox="-293 409 25 25"
@@ -67,7 +71,7 @@ class App extends Component {
                 </ul>
               </a>
             </div>
-            <div className="link-group">
+            <div className="link-group user-group">
               <a href="javascript:void(0)">
                 <div class="User-area" onClick={this.toggleUserDropDown}>
                   <div class="User-avtar">
@@ -105,6 +109,70 @@ class App extends Component {
         <div class="feed-content">
           {/*   */}
           {/* {post card} */}
+          <div class="post-container">
+            <div class="post-card">
+              <div class="post-card__content">
+                <div class="post-card__info">
+                  <h1>My most favorite place in the world</h1>
+
+                  <div className="post-description">
+                    <p className="post-description">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Quas doloribus dolorum ratione optio. Tenetur id fugiat
+                      totam, ducimus velit? Officia mollitia reiciendis ipsum!
+                    </p>
+                  </div>
+
+                  <a href="#">Tawhid Abdullah</a>
+
+                  <div className="post-date-read-time">
+                    {" "}
+                    <p>April 28 &rarr; 3 min read</p>
+                  </div>
+                </div>
+              </div>
+              <div class="post-img-container">
+                <img
+                  class="post-card__img"
+                  id="post-card__img"
+                  src="https://images.pexels.com/photos/1772120/pexels-photo-1772120.jpeg?cs=srgb&dl=blackboard-close-up-computer-keyboard-1772120.jpg&fm=jpg"
+                  alt="post-img"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="post-container">
+            <div class="post-card">
+              <div class="post-card__content">
+                <div class="post-card__info">
+                  <h1>My most favorite place in the world</h1>
+
+                  <div className="post-description">
+                    <p className="post-description">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Quas doloribus dolorum ratione optio. Tenetur id fugiat
+                      totam, ducimus velit? Officia mollitia reiciendis ipsum!
+                    </p>
+                  </div>
+
+                  <a href="#">Tawhid Abdullah</a>
+
+                  <div className="post-date-read-time">
+                    {" "}
+                    <p>April 28 &rarr; 3 min read</p>
+                  </div>
+                </div>
+              </div>
+              <div class="post-img-container">
+                <img
+                  class="post-card__img"
+                  id="post-card__img"
+                  src="https://images.pexels.com/photos/1772120/pexels-photo-1772120.jpeg?cs=srgb&dl=blackboard-close-up-computer-keyboard-1772120.jpg&fm=jpg"
+                  alt="post-img"
+                />
+              </div>
+            </div>
+          </div>
           <div class="post-container">
             <div class="post-card">
               <div class="post-card__content">
